@@ -57,6 +57,38 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  Color currentColor1 = Colors.white;
+  void changeColor1() {
+    setState(() {
+      currentColor1 =
+          currentColor1 == Colors.green ? Colors.white : Colors.green;
+    });
+  }
+
+  Color currentColor2 = Colors.white;
+  void changeColor2() {
+    setState(() {
+      currentColor2 =
+          currentColor2 == Colors.green ? Colors.white : Colors.green;
+    });
+  }
+
+  Color currentColor3 = Colors.white;
+  void changeColor3() {
+    setState(() {
+      currentColor3 =
+          currentColor3 == Colors.green ? Colors.white : Colors.green;
+    });
+  }
+
+  Color currentColor4 = Colors.white;
+  void changeColor4() {
+    setState(() {
+      currentColor4 =
+          currentColor4 == Colors.green ? Colors.white : Colors.green;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -106,12 +138,12 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           GestureDetector(
-                            onTap: () {},
+                            onTap: changeColor1,
                             child: Text(
                               "News",
                               style: GoogleFonts.outfit(
                                   textStyle: TextStyle(
-                                      color: Colors.white,
+                                      color: currentColor1,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 16)),
                             ),
@@ -120,12 +152,12 @@ class _HomePageState extends State<HomePage> {
                             width: 60,
                           ),
                           GestureDetector(
-                            onTap: () {},
+                            onTap: changeColor2,
                             child: Text(
                               "Video",
                               style: GoogleFonts.outfit(
                                   textStyle: TextStyle(
-                                      color: Colors.white,
+                                      color: currentColor2,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 16)),
                             ),
@@ -134,12 +166,12 @@ class _HomePageState extends State<HomePage> {
                             width: 60,
                           ),
                           GestureDetector(
-                            onTap: () {},
+                            onTap: changeColor3,
                             child: Text(
                               "Artist",
                               style: GoogleFonts.outfit(
                                   textStyle: TextStyle(
-                                      color: Colors.white,
+                                      color: currentColor3,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 16)),
                             ),
@@ -148,12 +180,12 @@ class _HomePageState extends State<HomePage> {
                             width: 60,
                           ),
                           GestureDetector(
-                            onTap: () {},
+                            onTap: changeColor4,
                             child: Text(
                               "Podcast",
                               style: GoogleFonts.outfit(
                                   textStyle: TextStyle(
-                                      color: Colors.white,
+                                      color: currentColor4,
                                       fontWeight: FontWeight.w700,
                                       fontSize: 16)),
                             ),
