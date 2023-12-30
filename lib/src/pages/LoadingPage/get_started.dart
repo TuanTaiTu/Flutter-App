@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ltdd_cuoi_ky/choose_mode.dart';
+import 'choose_mode.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -17,20 +18,26 @@ class StartPage extends StatelessWidget {
         child: Scaffold(
       body: Center(
         child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/BackGround/bgGetStarted.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
           child: Column(
             children: [
               Container(
                 padding: EdgeInsets.only(top: 37),
-                child: Image(image: AssetImage("images/Spotify.png")),
+                child: Image(image: AssetImage("images/Logo/Spotify.png")),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 400),
                 child: Text(
                   "Enjoy Listening To Music",
-                  style: TextStyle(
-                      // color: Colors.white,
-                      fontSize: 25,
-                      fontWeight: FontWeight.w700),
+                  style: GoogleFonts.libreBaskerville(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w700,
+                      fontSize: 25),
                 ),
               ),
               Padding(
@@ -41,6 +48,10 @@ class StartPage extends StatelessWidget {
                     Text(
                       "We've combined the power of the Following feed with the For you feed so there’s one place to discover content on GitHub.There’s improved filtering so you can customize your feed exactly how you like it, and a shiny new visual design. ✨",
                       textAlign: TextAlign.center,
+                      style: GoogleFonts.libreBaskerville(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14),
                     ),
                   ],
                 ),
@@ -62,10 +73,10 @@ class StartPage extends StatelessWidget {
                   ),
                   child: Text(
                     "Get Started",
-                    style: TextStyle(
+                    style: GoogleFonts.libreBaskerville(
+                        color: Colors.white,
                         fontWeight: FontWeight.w700,
-                        fontSize: 20,
-                        color: Colors.white),
+                        fontSize: 20),
                   ),
                 ),
               )

@@ -20,7 +20,7 @@ class Loading extends StatelessWidget {
             height: double.infinity,
             width: double.infinity,
             color: const Color(0xFF1C1B1B),
-            child: const Image(image: AssetImage('images/Spotify.png')),
+            child: const Image(image: AssetImage('images/Logo/Spotify.png')),
           )
         ],
       ),
